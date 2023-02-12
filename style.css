@@ -221,6 +221,11 @@ html{
     align-items: center;
 }
 
+.apply-desc{
+    text-decoration: none;
+    color: white;
+}
+
 /* Home Page Ends */
 
 /* Timer */
@@ -508,7 +513,7 @@ h1 {
     /* border: black solid; */
     position: absolute;
     left: 50vw;
-    top: 10rem;
+    top: 20rem;
     transform: translateX(-50%);
 }
 
