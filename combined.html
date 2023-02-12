@@ -31,38 +31,59 @@
                 document.getElementById("minutes").innerHTML = minutes;
                 document.getElementById("seconds").innerHTML = seconds;
             }, 1000) 
+
         </script>
     </head>
-    <body>
+    <body >
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
         <!--front page div-->
+
+        <div class="taskbar">
+            <div class="group-1">
+                <div class="menu">
+                    <div class="line-1 line target"></div>
+                    <div class="line-2 line"></div>
+                    <div class="line-3 line target"></div>
+                </div>
+                <a href="#home" class="logo-name"><img src="./images/ieee.png" class="logo-img"/></a>
+            </div>
+            <div>
+                <img src="./images/vit.png" class="logo-img"/>
+            </div>
+        </div>
+
+        <nav class="navbar target">
+            <li><a class="nav-link" href="#home">Home</a></li>
+            <li><a class="nav-link" href="#timeline">Countdown</a></li>
+            <li><a class="nav-link" href="#themes">Themes</a></li>
+            <li><a class="nav-link" href="#sponsor">Sponsor</a></li>
+            <li><a class="nav-link" href="#prizes">Prizes</a></li>
+            <li><a class="nav-link" href="#about_us">About Us</a></li>
+        </nav>
+        
         <!--navbar-->
-        <nav class="navbar">
-            <!--div containing buttons and logos-->
+        <!-- <nav class="navbar">
             <div class="container-fluid">
-                <!--IEEE Student Branch logo-->
                 <div class="me-auto" style="max-width:10%">
                     <img src="./images/Stubrlogo.jpg" alt="IEEE Student Branch" style="height:40px;width:40px;">
                 </div>
-                <!--div containing nav buttons-->
                 <div class="mx-auto" style="max-width:80%;">
                     <button type="button" class="button navbtn" onclick="window.location.href='#home';">Home</button>
-                    <button type="button" class="button navbtn" onclick="window.location.href='#themes';">Themes</button>
-                    <button type="button" class="button navbtn" onclick="window.location.href='#about_us';">About Us</button>
-                    <button type="button" class="button navbtn" onclick="window.location.href='#prizes';">Prizes</button>
                     <button type="button" class="button navbtn" onclick="window.location.href='#timeline';">Timer</button>
+                    <button type="button" class="button navbtn" onclick="window.location.href='#themes';">Themes</button>
                     <button type="button" class="button navbtn" onclick="window.location.href='#sponsor';">Sponsors</button>
+                    <button type="button" class="button navbtn" onclick="window.location.href='#prizes';">Prizes</button>
+                    <button type="button" class="button navbtn" onclick="window.location.href='#about_us';">About Us</button>
                 </div>
-                <!--Hackathon logo-->
                 <div class="ms-auto" style="max-width:10%">
                     <img src="./images/hacklogo.jpg" alt="Hackathon" style="height:40px;width:40px;">
                 </div>
             </div>
-        </nav>
+        </nav> -->
         <!-- navbar ends -->
         
         <!-- homepage -->
-        <div id="home" class="frontpage">
+        <div class="frontpage" id="home">
 
             <!-- <img src="./images/page1.jpg" class="back-img"/> -->
             
@@ -85,7 +106,7 @@
                 </div>
                 <!--div containing hackathon description-->
                 <div class="textb">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ac ex nec tellus accumsan laoreet non ut purus. Nullam dapibus dictum orci a pharetra. Sed placerat justo sit amet elit iaculis, dictum convallis augue accumsan. Pellentesque felis elit, lobortis vitae lacinia eget, consectetur vel ligula. Integer sagittis est non diam sodales rhoncus. Ut eget sagittis tellus, eu laoreet massa. Suspendisse potenti. Donec vitae blandit turpis.</p>
+                    <p>We would like to enlighten your minds by providing you an opportunity to show your skills in various technologies. We are providing a platform that endeavours to bring innovation and creativity and build your curiosity, ignite your passion to explore various domains of your interest. Bring your ideas into your own unique projects to solve the given problem and make new connections with other young minds in campus!</p>
                 </div>
                 <!--div containing application button-->
                 <div class="btnapp">
@@ -147,28 +168,27 @@
                 <div class="theme-div">
                     <div class="theme-title">Healthcare</div>
                     <div class="theme-content">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        Technology has made a great impact in advancement of medical treatments, providing more efficient care. For example, telemedicine has made it easier for patients to receive medical consulations from the comfort of their homes, this reducing the need for in person visits and better access to healthcare. Electronics Health Records(EHR) have also streamlined the management of patient data, reducing the risk of medical errors and improving patient outcomes. Other technological advancements such as wearable health monitors and AI-powered medical devices are enabling patients to proactively manage their health and receive more personalized care.
                     </div>
                 </div>
                 <div class="theme-div">
                     <div class="theme-content">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        Technology has changed how clothing is created, produced, and worn in the fashion industry. The adoption of computer-aided design (CAD) has facilitated designers' ability to swiftly and effectively construct complicated patterns, test designs, and make revisions. Consumers may now purchase for clothing from anywhere in the world because to the growth of e-commerce, which has resulted in a wider variety of clothing selections. Additionally, the combination of wearable technology and smart materials has made it possible to design apparel that can track fitness data, change colour, and more. Not only have these innovations altered the fashion sector, but they also hold the promise of significantly enhancing our quality of life.
                     </div>
-                    <div class="theme-title">Gaming</div>
-                </div>
-                <div class="theme-div">
                     <div class="theme-title">Fashion</div>
-                    <div class="theme-content">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    </div>
                 </div>
-                
             </div>
-    
+            
             <div class="lower-blend">
                 <div class="theme-div">
+                    <div class="theme-title">Gaming</div>
                     <div class="theme-content">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        Online gaming has seen a tremendous evolution over the years with the advancements in technology. Starting from text-based games to high-graphics games, the graphics quality and game-play has improved greatly. The introduction of cloud gaming has made it possible to play games on any device with an internet connection. The introduction of Virtual Reality and Augmented Reality has brought a whole new level of immersion to online gaming. Multiplayer gaming has become more accessible, with games supporting cross-platform play and offering seamless matchmaking services. The increasing popularity of mobile gaming has also driven the development of mobile gaming technology. With the constant innovation in technology, the future of online gaming looks very promising not only because it fun but also lucurative.
+                    </div>
+                </div>
+                <div class="theme-div">
+                    <div class="theme-content">
+                        Sustainable development and technology go hand in hand as technology can play a crucial role in promoting and supporting sustainable development. Advancements in clean energy technology, such as renewable energy sources, can help reduce the carbon footprint and protect the environment. Smart city technologies, such as energy-efficient buildings and transportation systems, can improve the sustainability of urban areas. The development of digital technologies, such as the Internet of Things, can help increase resource efficiency and reduce waste. The use of technology in agriculture, such as precision agriculture, can help increase food production while reducing the use of harmful chemicals. Technology can also support sustainable development by improving access to education, healthcare, and other essential services. The key is to ensure that the development and use of technology is aligned with the principles of sustainable development
                     </div>
                     <div class="theme-title font-change">Sustainable Development Goals</div>
                 </div>
@@ -192,25 +212,26 @@
 
         <!-- prizes -->
         <div class="mid-2" id="prizes">
+            <div class="r-line"></div>
             <h1 class="prizes-head">PRIZES</h1>
-            <div class="bg-3">
-                <img class="bg-img-3" src="./images/background1-removebg-preview.png" alt="f-img">
-                <!-- <h1>PRIZES</h1> -->
-                <div class="boxes">
-                    <div class="rows">
-                        <div class="B1 box"></div>
-                        <div class="B2 box"></div>
-                    </div>
-                    <div class="rows">
-                        <div class="B3 box"></div>
-                        <div class="B4 box"></div>
-                    </div>
-                    <div class="rows">
-                        <div class="B5 box"></div>
-                        <div class="B6 box"></div>
-                    </div>
+            <div class="l-line"></div>
+
+            <div class="prize-container">
+                <h class="desc-head">
+                    Join in  for a chance to win a share of our generous prize pool worth over Rs. 15,000! 
+                </h>
+
+                <div class="prize-desc-cont">
+                    <p class="f-p prize-amt">1st place - Rs.10,000</p>
+                    <p class="s-p prize-amt">2nd place - Rs.5,000</p>
+                    <p class="t-p prize-amt">3rd place - Rs.2,500</p>
                 </div>
+                <div class="prizes-end">
+                    <span class="bigger">"</span>But that's not all, participants will also have the opportunity to gain valuable industry experience through our internship programs. <br> Don't miss out on this exciting opportunity to boost your skills and win big!<span class="bigger">"</span>
+                </div>
+
             </div>
+                    
             <div class="extra-c">
                 <div class="line-1">
                     Have a great adventure ahead.<br>
@@ -222,11 +243,10 @@
         </div>
         <!-- prizes end -->
 
-
         <!-- footer -->
         
-        <div class="bg-4" id="about_us">
-            <div class="black-scr">
+        <div class="bg-4">
+            <div class="black-scr" id="about_us">
 
                 <div class="foot-row">
                     <div class="ele">
@@ -272,9 +292,9 @@
                 <p class="club-name">IEEE STUDENT BRANCH 2023</p>
             </div>
 
-            <img class="bg-img-4" src="./images/foot.jpg" alt="f-img">
+            <img class="bg-img-4" src="./images/dog.png" alt="f-img">
         </div>
         <!-- footer ends -->
-    
-</body>
+        <script src="./script.js"></script>
+    </body>
 </html>
